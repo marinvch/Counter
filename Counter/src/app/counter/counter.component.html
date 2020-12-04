@@ -1,0 +1,20 @@
+<div id="container">
+  <div>
+    <h1 class="headers">Countdown Timer</h1>
+  </div>
+  <div id="timer-container">
+    <p id="current-date"></p>
+    <div>
+      <input type="date" placeholder="List of Triggers" />
+      <input type="text" placeholder="Name of Event" />
+      <button (click)="cowntdown()">Start</button>
+    </div>
+    <div>
+      <h1 class="headers">Triggers</h1>
+      <ul></ul>
+      <p class="Endtime" {{createElements}}></p>
+    </div>
+  </div>
+</div>
+
+

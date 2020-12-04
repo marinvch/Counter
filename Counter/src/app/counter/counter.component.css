@@ -1,0 +1,43 @@
+*{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+#container {
+  display: flex;
+	align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 18px;
+  padding: 10px;
+};
+
+#timer-container{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  padding-top: 10px;
+
+}
+div{
+  padding: 5px;
+}
+p{
+  font-size: 40px;
+}
+input{
+  font-size: 20px;
+  padding: 10px;
+  margin:10px;
+}
+h1{
+  padding: 10px;
+}
+
+li{
+  list-style-type: none;
+}

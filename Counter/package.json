@@ -2,9 +2,11 @@
   "name": "counter",
   "version": "0.0.0",
   "scripts": {
+    "build": "ng build --prod --output-hashing=none",
+    "package": "cat dist/counter/{runtime,polyfills,main}.js | gzip > elements.js.gz",
+    "serve": "http-server --gzip",
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -15,10 +17,15 @@
     "@angular/common": "~10.2.0",
     "@angular/compiler": "~10.2.0",
     "@angular/core": "~10.2.0",
+    "@angular/elements": "^10.2.3",
     "@angular/forms": "~10.2.0",
     "@angular/platform-browser": "~10.2.0",
     "@angular/platform-browser-dynamic": "~10.2.0",
     "@angular/router": "~10.2.0",
+    "angular-countdown-timer": "0.0.1",
+    "document-register-element": "^1.7.2",
+    "ngx-countdown-timer": "^0.2.0",
+    "ngx-material-timepicker": "^5.5.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
